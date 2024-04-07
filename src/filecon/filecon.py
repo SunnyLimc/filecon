@@ -116,10 +116,8 @@ def concatenate_files(
 def main():
     parser = argparse.ArgumentParser(
         description="Concatenates specified files, optionally applying sed transformations or removing comments.",
-        epilog="Example usage:\n"
-        "python script.py -i '**/*.py' -e 'test_*.py' -ncc -frg '.py' 's/print/logging.info/' output.txt\n"
-        "This command concatenates all Python files, excluding test files, removes code comments, "
-        "replaces 'print' with 'logging.info', and writes to output.txt.",
+        epilog='''Example usage:
+python script.py -i '**/*.py' -e 'test_*.py' -ncc -frg '.py' 's/print/logging.info/' output.txt''',
     )
     parser.add_argument(
         "-i",

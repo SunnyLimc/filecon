@@ -1,7 +1,7 @@
 [project]
 name = "filecon"
 version = "0.1.0"
-description = "A tool to concatenate files with metadata and delimiters."
+description = "File concatenation with path and regex rules."
 authors = [{ name = "limc", email = "i@limc.me" }]
 dependencies = []
 requires-python = ">=3.12"
